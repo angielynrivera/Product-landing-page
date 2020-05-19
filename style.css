@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+#header-img{
+    height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 500ms;
+
+    font-size: 1.2rem;
+    margin: 0 50px;
+}
+
+nav a:hover{
+    color: red;
+    text-shadow: 0 5px 6px rgba(238, 204, 204, 0.9);
+}
+.header{
+    background: url(https://cdn.quotesgram.com/img/11/31/1466945441-twilight-quotes-twilight-series-34014508-1024-768.jpg) center no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top h1::before{
+    content: open-quote;
+    font-size: 50px;
+}
+.top h1::after{
+    content: close-quote;
+    font-size: 50px;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    margin: 500px auto;
+}
+
+button{
+   
+   
+    color: white;
+    margin: 30px;
+    border: 3px solid red;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 500ms;
+    
+
+    padding: 15px 50px;
+    max-width: 200px;
+}
+
+button:hover{
+    background: white;
+    color: black;
+}
+
+.container{
+    margin: 100px 50px;
+}
+.container h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.container h1::after{
+    content: '';
+    display: block;
+    color: white;
+    height: 2px;
+    width: 120px;
+    background: white;
+    margin: 10px auto;
+}
+
+#about{
+    margin: 100px auto 200px;
+    display: flex;
+}
+#video{
+    margin: 0 auto;
+}
+
+#book{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+
+
+
+#books img{
+    max-height: 300px;
+    width: 200px;
+    margin: 20px;
+    border: 1px solid white;
+}
+
+#video{
+    max-width: 600px;
+    width: 100%;
+}
+
+
+#contact{
+  display: flex;
+  flex-direction: column;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+#contact p{
+    padding-left: 10px;
+}
+input{
+    margin: 10px;
+    padding: 10px;
+}
+
+#submit{
+    background-color: rgb(228, 101, 101);
+}
+
+@media (max-width: 740px){
+    header{
+        flex-direction: column;
+    }
+    nav a{
+        margin: 0 20px;
+        font-size: 1rem;
+    }
+    button{
+       padding: 15px;
+       max-width: 100px;
+    }
+}
